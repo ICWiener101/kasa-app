@@ -1,5 +1,6 @@
+import CardContainer from './../../components/CardContainer/index';
 function HomePage() {
-      return <div>Home Page</div>;
+      return <CardContainer />;
 }
 
 export default HomePage;
