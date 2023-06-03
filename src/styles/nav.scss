@@ -1,12 +1,12 @@
 .nav {
       margin: 0 auto;
-      width: 100%;
+      width: 90%;
       display: flex;
       justify-content: space-between;
       padding-top: 10px;
       align-items: center;
 }
-a {
+.nav a {
       text-decoration: none;
       color: #ff6060;
       padding: 0;
@@ -16,14 +16,14 @@ a {
       }
 }
 
-ul {
+.nav ul {
       display: flex;
       flex-wrap: nowrap;
       width: 20%;
       justify-content: space-evenly;
       padding: 0;
 }
-li {
+.nav li {
       list-style: none;
       display: block;
       white-space: nowrap;
