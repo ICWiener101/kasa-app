@@ -10,6 +10,7 @@ function CardContainer() {
                               key={appartment.id}
                               title={appartment.title}
                               cover={appartment.cover}
+                              id={appartment.id}
                         />
                   ))}
             </div>

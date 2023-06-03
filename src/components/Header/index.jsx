@@ -1,9 +1,8 @@
-import headerBackground from '../../assets/header-background.png';
 import '../../styles/header.scss';
-function Header() {
+function Header({ image }) {
       return (
             <div className="header-container">
-                  <img src={headerBackground} alt="" />
+                  <img src={image} alt="" />
             </div>
       );
 }

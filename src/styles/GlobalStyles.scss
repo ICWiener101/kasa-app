@@ -1,8 +1,21 @@
+@font-face {
+      font-family: 'Montserrat';
+      src: url('../assets/fonts/Montserrat-VariableFont_wght.ttf')
+            format('truetype');
+}
+
 * {
-      font-family: 'Montserat';
+      font-family: 'Montserrat';
+      box-sizing: border-box;
 }
 
 body {
-      width: 1440px;
+      max-width: 1440px;
       margin: 0 auto;
+}
+
+#root {
+      display: flex;
+      flex-direction: column;
+      min-height: 100vh;
 }

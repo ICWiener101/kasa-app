@@ -1,5 +1,6 @@
 import redLogo from '../../assets/red-logo.png';
 import '../../styles/nav.scss';
+import { Link } from 'react-router-dom';
 
 function Nav() {
       return (
@@ -7,16 +8,15 @@ function Nav() {
                   <div className="logo">
                         <img src={redLogo} alt="" />
                   </div>
-                  <div>
-                        <ul>
-                              <li>
-                                    <a href="#">Acceuil</a>
-                              </li>
-                              <li>
-                                    <a href="#">A Propos</a>
-                              </li>
-                        </ul>
-                  </div>
+
+                  <ul>
+                        <li>
+                              <Link to="/">Acceuil</Link>
+                        </li>
+                        <li>
+                              <Link to="/about">A Propos</Link>
+                        </li>
+                  </ul>
             </div>
       );
 }

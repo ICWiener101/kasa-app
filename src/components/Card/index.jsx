@@ -1,14 +1,16 @@
-import PropTypes from 'prop-types';
 import '../../styles/card.scss';
+import { Link, useParams } from 'react-router-dom';
 
 function Card({ cover, title, id }) {
       return (
-            <div className="card">
-                  <div className="cover-image">
-                        <img src={cover} alt="" />
+            <Link to={`/details/${id}`}>
+                  <div className="card" key={id}>
+                        <div className="cover-image">
+                              <img src={cover} alt="" />
+                        </div>
+                        <h3>{title}</h3>
                   </div>
-                  <h3>{title}</h3>
-            </div>
+            </Link>
       );
 }
 

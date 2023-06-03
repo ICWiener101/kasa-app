@@ -3,15 +3,39 @@
       width: 100%;
       display: flex;
       justify-content: space-between;
+      padding-top: 10px;
+      align-items: center;
 }
 a {
       text-decoration: none;
       color: #ff6060;
+      padding: 0;
+      &:visited,
+      &:active {
+            text-decoration: underline;
+      }
 }
+
 ul {
       display: flex;
-      justify-content: space-between;
+      flex-wrap: nowrap;
+      width: 20%;
+      justify-content: space-evenly;
+      padding: 0;
 }
 li {
       list-style: none;
+      display: block;
+      white-space: nowrap;
+      padding: 0;
+      margin-left: 20px;
+      text-align: right;
+      font-size: 24px;
+}
+
+$breakpoint-phone: 768px;
+@media (max-width: $breakpoint-phone) {
+      .nav li {
+            font-size: 17px;
+      }
 }
