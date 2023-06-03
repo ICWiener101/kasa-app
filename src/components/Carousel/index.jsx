@@ -22,8 +22,8 @@ function Carousel({ pictures }) {
                         alt={`Image ${currentSlide + 1}`}
                         key={currentSlide + 1}
                   />
-                  <button onClick={prevSlide}>Previous</button>
-                  <button onClick={nextSlide}>Next</button>
+                  <button className="btn-previous" onClick={prevSlide}></button>
+                  <button className="btn-next" onClick={nextSlide}></button>
             </div>
       );
 }
