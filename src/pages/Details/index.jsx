@@ -4,11 +4,14 @@ import { useParams } from 'react-router-dom';
 import Carousel from './../../components/Carousel/index';
 import Info from './../../components/Info/index';
 import '../../styles/details.scss';
+import Error from './../Error/index';
 
 function Details() {
       const { id } = useParams();
       const appartment = appartmentList.find((item) => item.id === id);
-
+      if (!appartment) {
+            return <Error />;
+      }
       return (
             <div className="details-wrapper">
                   <Carousel pictures={appartment.pictures} />

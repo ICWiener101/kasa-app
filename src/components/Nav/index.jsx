@@ -1,4 +1,4 @@
-import redLogo from '../../assets/red-logo.png';
+import logo from '../../assets/svg-logo.svg';
 import '../../styles/nav.scss';
 import { Link } from 'react-router-dom';
 
@@ -7,7 +7,7 @@ function Nav() {
             <div className="nav">
                   <div className="logo">
                         <Link to="/">
-                              <img src={redLogo} alt="" />
+                              <img src={logo} alt="" />
                         </Link>
                   </div>
 

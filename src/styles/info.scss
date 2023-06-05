@@ -5,7 +5,7 @@
       width: 100%;
       justify-content: space-between;
       flex-direction: column;
-      color: #ff6060;
+      color: $primary-color;
       font-weight: 500;
 }
 
@@ -71,7 +71,7 @@
 
 .tag {
       border-radius: 10px;
-      background-color: #ff6060;
+      background-color: $primary-color;
       width: 30%;
       padding: 8px 10px;
       text-align: center;
@@ -94,7 +94,7 @@
       .location-host {
             flex-direction: column;
             width: 90%;
-            background-color: #fff;
+            background-color: $secondary-background-color;
       }
       .name-location {
             width: 90%;

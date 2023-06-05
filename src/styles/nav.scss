@@ -10,7 +10,7 @@
 }
 .nav a {
       text-decoration: none;
-      color: #ff6060;
+      color: $primary-color;
       padding: 0;
       &:visited,
       &:active {
@@ -38,8 +38,8 @@
             font-size: 17px;
       }
       .nav {
-            width: 100%;
-            justify-content: space-around;
+            width: 90%;
+            justify-content: space-between;
       }
       .logo img {
             width: 80%;

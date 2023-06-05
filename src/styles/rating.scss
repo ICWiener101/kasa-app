@@ -1,3 +1,4 @@
+@import './variables';
 .rating {
       font-size: 30px;
       font-weight: bold;
@@ -7,5 +8,5 @@
 }
 
 .filled {
-      color: #ff6060;
+      color: $primary-color;
 }

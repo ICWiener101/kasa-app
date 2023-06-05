@@ -22,18 +22,18 @@
       top: 50%;
       transform: translate(-50%, -50%);
       height: 40px;
-      width: 40px;
+      width: 60px;
       border: none;
       background-color: transparent;
       cursor: pointer;
 }
 
 .btn-previous {
-      left: 10px;
+      left: 20px;
 }
 
 .btn-next {
-      right: 10px;
+      right: -9px;
 }
 
 .btn-next::before {
@@ -83,7 +83,6 @@
       transition: 0.5s;
 }
 
-$breakpoint-tablet: 900px;
 @media (max-width: $breakpoint-tablet) {
       $arrow-width: 50px;
       $arrow-height: 8px;

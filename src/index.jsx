@@ -17,9 +17,9 @@ root.render(
                   <Nav />
                   <Routes>
                         <Route path="/" element={<HomePage />} />
-                        <Route path="*" element={<Error />} />
                         <Route path="/about" element={<About />} />
                         <Route path="/details/:id" element={<Details />} />
+                        <Route path="/*" element={<Error />} />
                   </Routes>
                   <Footer />
             </Router>

@@ -43,12 +43,8 @@ function Info({
                         </div>
                   </div>
                   <div className="equip-desc">
-                        <Dropdown
-                              description={description}
-                              // equipments={equipments}
-                        />
+                        <Dropdown description={description} />
                         <Dropdown equipments={equipments} />
-                        {/* <Dropdown equipments={equipments} /> */}
                   </div>
             </div>
       );
