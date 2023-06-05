@@ -3,8 +3,13 @@ import '../../styles/dropdownList.scss';
 
 function DropdownList({ equipments }) {
       const [isOpen, setOpen] = useState(false);
+      const [currentPage, setCurrentPage] = useState('About');
       const handleOpen = () => {
             setOpen(!isOpen);
+      };
+
+      const handleCurrentPage = (page) => {
+            setCurrentPage(page);
       };
       return (
             <div className={`${'dropdown'} ${isOpen ? 'active' : ''}`}>

@@ -1,3 +1,4 @@
+@import './variables.scss';
 .carousel {
       width: 100%;
       height: 600px;
@@ -16,10 +17,12 @@
 }
 
 .carousel button {
+      padding: 0;
       position: absolute;
-      top: 180px;
-      height: 250px;
-      width: 70px;
+      top: 50%;
+      transform: translate(-50%, -50%);
+      height: 40px;
+      width: 40px;
       border: none;
       background-color: transparent;
       cursor: pointer;
@@ -36,10 +39,9 @@
 .btn-next::before {
       content: '';
       position: absolute;
-      width: 50px;
-      height: 8px;
-      top: 110px;
-      right: 0px;
+      width: $arrow-width;
+      height: $arrow-height;
+      top: $arrow-top-before;
       background: white;
       z-index: 1;
       transform: rotate(50deg);
@@ -48,36 +50,47 @@
 .btn-next::after {
       content: '';
       position: absolute;
-      width: 50px;
-      height: 8px;
-      top: 145px;
-      right: 0px;
+      width: $arrow-width;
+      height: $arrow-height;
+      top: $arrow-top-after;
       background: white;
       z-index: 1;
       transform: rotate(130deg);
       transition: 0.5s;
 }
 .btn-previous::before {
+      left: 10px;
       content: '';
       position: absolute;
-      width: 50px;
-      height: 8px;
-      top: 110px;
-      left: 0px;
+      width: $arrow-width;
+      height: $arrow-height;
+      top: $arrow-top-before;
       background: white;
       z-index: 1;
       transform: rotate(-50deg);
       transition: 0.5s;
 }
 .btn-previous::after {
+      left: 10px;
       content: '';
       position: absolute;
-      width: 50px;
-      height: 8px;
-      top: 145px;
-      left: 0px;
+      width: $arrow-width;
+      height: $arrow-height;
+      top: $arrow-top-after;
       background: white;
       z-index: 1;
       transform: rotate(-130deg);
       transition: 0.5s;
+}
+
+$breakpoint-tablet: 900px;
+@media (max-width: $breakpoint-tablet) {
+      $arrow-width: 50px;
+      $arrow-height: 8px;
+      $arrow-top-before: 10%;
+      $arrow-top-after: 10%;
+      .carousel {
+            width: 90%;
+            height: 255px;
+      }
 }

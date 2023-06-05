@@ -1,1 +1,1 @@
-.details-wrapper{width:90%;display:flex;flex-direction:column;margin:0 auto}/*# sourceMappingURL=details.min.css.map */
+.details-wrapper{width:90%;display:flex;flex-direction:column;margin:0 auto;flex:1}@media(max-width: 1000px){.details-wrapper{width:100%}}/*# sourceMappingURL=details.min.css.map */

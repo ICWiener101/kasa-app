@@ -1,1 +1,1 @@
-{"version":3,"sources":["GlobalStyles.scss"],"names":[],"mappings":"AAAA,WACM,wBAAA,CACA,8EAAA,CAIN,EACM,wBAAA,CACA,qBAAA,CAGN,KACM,gBAAA,CACA,aAAA,CAGN,MACM,YAAA,CACA,qBAAA,CACA,gBAAA","file":"GlobalStyles.min.css"}
+{"version":3,"sources":["globalStyles.scss"],"names":[],"mappings":"AAAA,WACM,wBAAA,CACA,8EAAA,CAIN,EACM,wBAAA,CACA,qBAAA,CAGN,KACM,gBAAA,CACA,aAAA,CAGN,MACM,YAAA,CACA,qBAAA,CACA,gBAAA","file":"globalStyles.min.css"}

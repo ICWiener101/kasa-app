@@ -1,13 +1,17 @@
+@import './variables.scss';
+
 .error {
       display: flex;
       align-items: center;
       flex-direction: column;
+      justify-content: space-evenly;
+      flex: 1;
 }
 .error-code {
       font-size: 288px;
       font-weight: 700;
       text-align: center;
-      color: #ff6060;
+      color: $primary-color;
       margin: 0 auto;
       margin-top: 80px;
       margin-bottom: 100px;
@@ -15,7 +19,7 @@
 
 .error-message {
       text-align: center;
-      color: #ff6060;
+      color: $primary-color;
       font-size: 36px;
       font-weight: 500;
       margin: 0 auto;
@@ -24,8 +28,25 @@
 
 .link-to-home {
       text-align: center;
-      text-decoration: underline;
-      color: #ff6060;
-      font-size: 18px;
       margin-bottom: 70px;
+}
+.link-to-home a {
+      color: $primary-color;
+      font-size: 18px;
+}
+
+@media (max-width: $breakpoint-phone) {
+      .error {
+            margin: 140px auto;
+      }
+      .error-code {
+            font-size: 96px;
+      }
+      .error-message {
+            font-size: 18px;
+            width: 70%;
+      }
+      .link-to-home {
+            font-size: 14px;
+      }
 }

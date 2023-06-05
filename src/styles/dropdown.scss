@@ -1,37 +1,37 @@
 .dropdown {
       position: relative;
+      &::before {
+            content: '';
+            position: absolute;
+            width: 14px;
+            height: 2px;
+            top: 26px;
+            right: 30px;
+            background: white;
+            z-index: 1;
+            transform: rotate(40deg);
+            transition: 0.5s;
+      }
+      &::after {
+            content: '';
+            position: absolute;
+            width: 14px;
+            height: 2px;
+            top: 26px;
+            right: 40px;
+            background: white;
+            z-index: 1;
+            transform: rotate(-40deg);
+            transition: 0.4s;
+      }
 }
-.dropdown::before {
-      content: '';
-      position: absolute;
-      width: 14px;
-      height: 2px;
-      top: 26px;
-      right: 30px;
-      background: white;
-      z-index: 1;
-      transform: rotate(40deg);
-      transition: 0.5s;
-}
+
 .dropdown.active::after {
       transform: rotate(40deg);
 }
 
 .dropdown.active::before {
       transform: rotate(-40deg);
-}
-
-.dropdown::after {
-      content: '';
-      position: absolute;
-      width: 14px;
-      height: 2px;
-      top: 26px;
-      right: 40px;
-      background: white;
-      z-index: 1;
-      transform: rotate(-40deg);
-      transition: 0.4s;
 }
 
 .about-page-width {
@@ -43,6 +43,11 @@
 .apartement-details-page-width {
       width: 45%;
       margin-bottom: 10px;
+      display: flex;
+      flex-direction: column;
+}
+.apartement-details-page-width li {
+      list-style: none;
 }
 
 .dropdown-btn {
@@ -69,4 +74,12 @@
       border-bottom-left-radius: 10px;
       border-bottom-right-radius: 10px;
       padding: 15px;
+}
+
+$breakpoint-tablet: 900px;
+@media (max-width: $breakpoint-tablet) {
+      .apartement-details-page-width {
+            width: 100%;
+            margin-bottom: 30px;
+      }
 }

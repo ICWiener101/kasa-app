@@ -3,7 +3,6 @@ import '../../styles/rating.scss';
 import { useParams } from 'react-router-dom';
 
 function Rating({ rating }) {
-      console.log(rating);
       const renderStars = () => {
             const stars = [];
             for (let i = 0; i < 5; i++) {

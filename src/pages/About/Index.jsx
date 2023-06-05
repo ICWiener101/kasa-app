@@ -2,6 +2,7 @@ import React from 'react';
 import Header from './../../components/Header/index';
 import aboutBackground from '../../assets/aboutBack.png';
 import Dropdown from './../../components/Dropdown/index';
+import '../../styles/about.scss';
 
 function About() {
       const contentList = [
@@ -24,16 +25,16 @@ function About() {
       ];
       const isAbout = true;
       return (
-            <>
+            <div className="about">
                   <Header image={aboutBackground} />
                   {contentList.map((content) => (
                         <Dropdown
-                              buttonText={content.buttonText}
                               content={content.content}
+                              buttonText={content.buttonText}
                               isAbout
                         />
                   ))}
-            </>
+            </div>
       );
 }
 
