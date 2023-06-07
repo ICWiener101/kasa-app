@@ -1,4 +1,6 @@
 import React, { useState } from 'react';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faChevronRight } from '@fortawesome/free-solid-svg-icons';
 import '../../styles/dropdown.scss';
 
 function Dropdown({ buttonText, content, isAbout, description, equipments }) {
@@ -21,13 +23,19 @@ function Dropdown({ buttonText, content, isAbout, description, equipments }) {
                                     className="dropdown-btn"
                                     onClick={handleOpen}
                               >
-                                    Description
+                                    Description{' '}
+                                    <FontAwesomeIcon
+                                          className="chevron"
+                                          icon={faChevronRight}
+                                    />
                               </button>
-                              {isOpen && (
-                                    <div className="dropdown-content">
-                                          {description}
-                                    </div>
-                              )}
+                              <div
+                                    className={`dropdown-content ${
+                                          isOpen ? 'open' : ''
+                                    }`}
+                              >
+                                    <p> {description}</p>
+                              </div>
                         </div>
                   );
             }
@@ -44,15 +52,22 @@ function Dropdown({ buttonText, content, isAbout, description, equipments }) {
                                     className="dropdown-btn"
                                     onClick={handleOpen}
                               >
-                                    Equipment
+                                    Equipment{' '}
+                                    <FontAwesomeIcon
+                                          className="chevron"
+                                          icon={faChevronRight}
+                                    />
                               </button>
-                              {isOpen && (
-                                    <ul className="dropdown-content">
-                                          {equipments.map((item, index) => (
-                                                <li key={index}>{item}</li>
-                                          ))}
-                                    </ul>
-                              )}
+
+                              <ul
+                                    className={`dropdown-content ${
+                                          isOpen ? 'open' : ''
+                                    }`}
+                              >
+                                    {equipments.map((item, index) => (
+                                          <li key={index}>{item}</li>
+                                    ))}
+                              </ul>
                         </div>
                   );
             }
@@ -67,8 +82,14 @@ function Dropdown({ buttonText, content, isAbout, description, equipments }) {
             >
                   <button className="dropdown-btn" onClick={handleOpen}>
                         {buttonText}
+                        <FontAwesomeIcon
+                              className="chevron"
+                              icon={faChevronRight}
+                        />
                   </button>
-                  {isOpen && <div className="dropdown-content">{content}</div>}
+                  <div className={`dropdown-content ${isOpen ? 'open' : ''}`}>
+                        <p> {content} </p>
+                  </div>
             </div>
       );
 }

@@ -1,38 +1,74 @@
 @import './variables';
 .dropdown {
       position: relative;
-      &::before {
-            content: '';
-            position: absolute;
-            width: 14px;
-            height: 2px;
-            top: 26px;
-            right: 30px;
-            background: white;
-            z-index: 1;
-            transform: rotate(40deg);
-            transition: 0.5s;
-      }
-      &::after {
-            content: '';
-            position: absolute;
-            width: 14px;
-            height: 2px;
-            top: 26px;
-            right: 40px;
-            background: white;
-            z-index: 1;
-            transform: rotate(-40deg);
-            transition: 0.4s;
-      }
 }
 
-.dropdown.active::after {
-      transform: rotate(40deg);
+.chevron {
+      position: absolute;
+      font-size: 24px;
+      top: 15px;
+      right: 30px;
+      color: white;
+      transform: rotate(-90deg);
+      transition: all 0.5s ease-in-out;
 }
 
-.dropdown.active::before {
-      transform: rotate(-40deg);
+.active .chevron {
+      transform: rotate(-270deg);
+}
+
+.dropdown-content {
+      z-index: -1;
+      margin: 0 auto;
+      width: 100%;
+      background-color: $primary-background-color;
+      color: $primary-color;
+      border-bottom-left-radius: 10px;
+      border-bottom-right-radius: 10px;
+      transition: all 0.5s ease, opacity 0.8s;
+      opacity: 0;
+      visibility: hidden;
+
+      overflow: hidden;
+      height: 0;
+      transform: translateY(-5px);
+}
+.dropdown-content.open {
+      visibility: visible;
+      transform: translateY(0px);
+      opacity: 1;
+      height: auto;
+      z-index: -1;
+}
+
+.dropdown-btn {
+      width: 100%;
+      height: 52px;
+      margin: 0 auto;
+      display: block;
+      background-color: $primary-color;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      z-index: 1;
+      color: #fff;
+      font-weight: 500;
+      font-size: 24px;
+      text-align: left;
+      padding-left: 10px;
+}
+
+.dropdown-content p {
+      padding: 15px;
+      margin: 0;
+      transition: all 0.5s ease;
+      opacity: 0;
+      // transform: translateY(-5px);
+      overflow: hidden;
+}
+.dropdown-content.open p {
+      transform: translateY(0px);
+      opacity: 1;
 }
 
 .about-page-width {
@@ -50,30 +86,7 @@
 .apartement-details-page-width li {
       list-style: none;
 }
-
-.dropdown-btn {
-      width: 100%;
-      height: 52px;
-      margin: 0 auto;
-      display: block;
-      background-color: $primary-color;
-      border: none;
-      border-radius: 5px;
-      color: #fff;
-      font-weight: 500;
-      font-size: 24px;
-      text-align: left;
-      padding-left: 10px;
-      cursor: pointer;
-}
-
-.dropdown-content {
-      margin: 0 auto;
-      width: 100%;
-      background-color: $primary-background-color;
-      color: $primary-color;
-      border-bottom-left-radius: 10px;
-      border-bottom-right-radius: 10px;
+.apartement-details-page-width ul {
       padding: 15px;
 }
 
