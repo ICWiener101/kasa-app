@@ -1,6 +1,11 @@
 import React, { useState } from 'react';
 import { useParams } from 'react-router-dom';
 import appartmentList from '../../data/db';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import {
+      faChevronRight,
+      faChevronLeft,
+} from '@fortawesome/free-solid-svg-icons';
 import '../../styles/carousel.scss';
 
 function Carousel({ pictures }) {
@@ -22,8 +27,20 @@ function Carousel({ pictures }) {
                         alt={`Image ${currentSlide + 1}`}
                         key={currentSlide + 1}
                   />
-                  <button className="btn-previous" onClick={prevSlide}></button>
-                  <button className="btn-next" onClick={nextSlide}></button>
+                  <button className="btn-previous" onClick={prevSlide}>
+                        {' '}
+                        <FontAwesomeIcon
+                              className="chevron-left"
+                              icon={faChevronLeft}
+                        />
+                  </button>
+                  <button className="btn-next" onClick={nextSlide}>
+                        {' '}
+                        <FontAwesomeIcon
+                              className="chevron-right"
+                              icon={faChevronRight}
+                        />
+                  </button>
             </div>
       );
 }

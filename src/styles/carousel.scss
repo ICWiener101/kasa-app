@@ -21,7 +21,7 @@
       position: absolute;
       top: 50%;
       transform: translate(-50%, -50%);
-      height: 40px;
+      height: 90px;
       width: 60px;
       border: none;
       background-color: transparent;
@@ -29,58 +29,17 @@
 }
 
 .btn-previous {
-      left: 20px;
+      left: 40px;
 }
 
 .btn-next {
-      right: -9px;
+      right: -20px;
 }
 
-.btn-next::before {
-      content: '';
-      position: absolute;
-      width: $arrow-width;
-      height: $arrow-height;
-      top: $arrow-top-before;
-      background: white;
-      z-index: 1;
-      transform: rotate(50deg);
-      transition: 0.5s;
-}
-.btn-next::after {
-      content: '';
-      position: absolute;
-      width: $arrow-width;
-      height: $arrow-height;
-      top: $arrow-top-after;
-      background: white;
-      z-index: 1;
-      transform: rotate(130deg);
-      transition: 0.5s;
-}
-.btn-previous::before {
-      left: 10px;
-      content: '';
-      position: absolute;
-      width: $arrow-width;
-      height: $arrow-height;
-      top: $arrow-top-before;
-      background: white;
-      z-index: 1;
-      transform: rotate(-50deg);
-      transition: 0.5s;
-}
-.btn-previous::after {
-      left: 10px;
-      content: '';
-      position: absolute;
-      width: $arrow-width;
-      height: $arrow-height;
-      top: $arrow-top-after;
-      background: white;
-      z-index: 1;
-      transform: rotate(-130deg);
-      transition: 0.5s;
+.chevron-left,
+.chevron-right {
+      font-size: 90px;
+      color: white;
 }
 
 @media (max-width: $breakpoint-tablet) {
@@ -91,5 +50,17 @@
       .carousel {
             width: 90%;
             height: 255px;
+      }
+      .chevron-left,
+      .chevron-right {
+            font-size: 40px;
+            color: white;
+      }
+      .btn-previous {
+            left: 20px;
+      }
+
+      .btn-next {
+            right: -40px;
       }
 }
