@@ -7,7 +7,7 @@ import '../../styles/about.scss';
 function About() {
       const contentList = [
             {
-                  buttonText: 'Fiabilite',
+                  buttonText: 'Fiabilité',
                   content: 'Les annonces postées sur Kasa garantissent une fiabilité totale.Les photos sont conformes aux logements, et toutes les informations sont régulièrement vérifiées par nos équipes.',
             },
             {
@@ -16,7 +16,7 @@ function About() {
             },
             {
                   buttonText: 'Service',
-                  content: 'La bienveillance fait partie des valeurs fondatrices de Kasa.Tout comportement discriminatoire ou de perturbation du voisinage entraînera une exclusion de notre plateforme.',
+                  content: 'Chez Kasa, nous nous engageons à fournir un service exceptionnel à nos utilisateurs. Notre équipe est dédiée à vous offrir une expérience sans pareille, en répondant rapidement à vos besoins et en vous fournissant un support personnalisé à chaque étape de votre parcours sur notre plateforme. Nous nous efforçons de rendre votre expérience de location de logement aussi fluide et agréable que possible.',
             },
             {
                   buttonText: 'Sécurité',

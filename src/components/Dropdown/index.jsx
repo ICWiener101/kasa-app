@@ -52,7 +52,7 @@ function Dropdown({ buttonText, content, isAbout, description, equipments }) {
                                     className="dropdown-btn"
                                     onClick={handleOpen}
                               >
-                                    Equipment{' '}
+                                    Equipments
                                     <FontAwesomeIcon
                                           className="chevron"
                                           icon={faChevronRight}
