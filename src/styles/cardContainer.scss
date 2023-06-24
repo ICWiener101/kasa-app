@@ -13,6 +13,14 @@
       border-radius: 25px;
       cursor: pointer;
 }
+.container-loading {
+      display: flex;
+      color: $primary-color;
+      font-family: inherit;
+      font-size: 32px;
+      font-weight: 700;
+      font-style: italic;
+}
 
 @media (max-width: $breakpoint-tablet) {
       .card-container {
