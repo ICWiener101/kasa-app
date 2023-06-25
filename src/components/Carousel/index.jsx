@@ -28,14 +28,12 @@ function Carousel({ pictures }) {
                         key={currentSlide + 1}
                   />
                   <button className="btn-previous" onClick={prevSlide}>
-                        {' '}
                         <FontAwesomeIcon
                               className="chevron-left"
                               icon={faChevronLeft}
                         />
                   </button>
                   <button className="btn-next" onClick={nextSlide}>
-                        {' '}
                         <FontAwesomeIcon
                               className="chevron-right"
                               icon={faChevronRight}

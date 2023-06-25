@@ -1,6 +1,8 @@
 import React from 'react';
 import '../../styles/rating.scss';
 import { useParams } from 'react-router-dom';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faStar } from '@fortawesome/free-solid-svg-icons';
 
 function Rating({ rating }) {
       const renderStars = () => {
@@ -9,7 +11,7 @@ function Rating({ rating }) {
                   const starClass = rating > i ? 'filled' : '';
                   stars.push(
                         <span key={i} className={`star ${starClass}`}>
-                              &#9733;
+                              <FontAwesomeIcon icon={faStar} />
                         </span>
                   );
             }
@@ -19,3 +21,4 @@ function Rating({ rating }) {
 }
 
 export default Rating;
+// &#9733;

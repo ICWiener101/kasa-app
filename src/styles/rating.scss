@@ -2,6 +2,9 @@
 .rating {
       font-size: 30px;
       font-weight: bold;
+      display: flex;
+      flex-direction: row;
+      justify-content: space-evenly;
 }
 .star {
       color: #e3e3e3;
