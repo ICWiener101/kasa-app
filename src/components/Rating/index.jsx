@@ -7,7 +7,7 @@ import { faStar } from '@fortawesome/free-solid-svg-icons';
 function Rating({ rating }) {
       const renderStars = () => {
             const stars = [];
-            for (let i = 0; i < 5; i++) {
+            for (let i = 0; i <= 4; i++) {
                   const starClass = rating > i ? 'filled' : '';
                   stars.push(
                         <span key={i} className={`star ${starClass}`}>
@@ -21,4 +21,3 @@ function Rating({ rating }) {
 }
 
 export default Rating;
-// &#9733;

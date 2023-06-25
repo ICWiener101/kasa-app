@@ -8,8 +8,6 @@ function CardContainer() {
 
       useEffect(() => {
             const timer = setTimeout(() => {
-                  const fetchedData = appartmentList;
-
                   setIsLoading(false);
             }, 1000);
 

@@ -11,13 +11,13 @@ import '../../styles/carousel.scss';
 function Carousel({ pictures }) {
       const [currentSlide, setCurrentSlide] = useState(0);
       const nextSlide = () => {
-            setCurrentSlide((prevSlide) =>
-                  prevSlide === pictures.length - 1 ? 0 : prevSlide + 1
+            setCurrentSlide((lastSlide) =>
+                  lastSlide === pictures.length - 1 ? 0 : lastSlide + 1
             );
       };
       const prevSlide = () => {
-            setCurrentSlide((prevSlide) =>
-                  prevSlide === 0 ? pictures.length - 1 : prevSlide - 1
+            setCurrentSlide((lastSlide) =>
+                  lastSlide === 0 ? pictures.length - 1 : lastSlide - 1
             );
       };
       return (

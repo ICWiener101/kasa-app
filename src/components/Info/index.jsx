@@ -32,7 +32,6 @@ function Info({
                               <div className="host-info">
                                     <h3>{hostName}</h3>
                                     <div className="host-pic">
-                                          {' '}
                                           <img
                                                 src={hostPicture}
                                                 alt="host picture"
